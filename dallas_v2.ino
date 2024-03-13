@@ -16,27 +16,8 @@
 // █████████████████████████████████████████████████████
 // M E M O R Y   I N F O
 // █████████████████████████████████████████████████████
-// PROGMEM to funkcja Arduino AVR, która została przeniesiona do ESP8266, aby zapewnić 
-// kompatybilność z istniejącymi bibliotekami Arduino, a także zaoszczędzić pamięć RAM. 
-//
-// WYKORZYSTANA PAMIĘĆ RAM i FLASH z włączonym SERIAL MONITOR
-// 
 // Variables and constants in RAM (global, static), used 28260 / 80192 bytes (35%) 
 // Code in flash (default, ICACHE_FLASH_ATTR), used 246476 / 1048576 bytes (23%)   
-//
-// WYKORZYSTANA PAMIĘĆ RAM i FLASH z wyłączonym SERIAL MONITOR
-//
-// Variables and constants in RAM (global, static), used 28176 / 80192 bytes (35%)
-// Code in flash (default, ICACHE_FLASH_ATTR), used 235540 / 1048576 bytes (22%)
-//
-// Jak widać, pamięć RAM jest zoptymalizowana pod SERIAL MONITOR, ale największą różnicę
-// widać w pamięci FLASH, przestawienie SERIAL na FALSE daje nam 10936 bajtów (10KBajta)
-// oszczędności pamięci. W przypadku małych projektów nie przejmujemy się tymi wartościami
-// ale gdy tworzymy coś wielkiego warto korzystać z MAKR i wyłączać funkcje które są
-// nam potem nie potrzebne !!! W trakcie pisania kodu potrzebujemy sprawdzić pewne zmienne
-// ale sprytne tworzenie kodu (dzielenie na funkcje) i poźniejsze ich wyłączenie jednym
-// logicznym warunkiem owocuje ogromnymi zyskami pamięci :-)
-//
 // █████████████████████████████████████████████████████
 // M A K R O
 // █████████████████████████████████████████████████████
