@@ -2,9 +2,8 @@
 //
 // ESP32/ESP8266 BlackBook by PowerTGS (2024)
 //
-// author : Tomasz Majcher 
+// author : PowerTGS
 // e-mail : powerTGS440@gmail.com
-// phone  : +48 668 082121
 //
 // █████████████████████████████████████████████████████
 //
